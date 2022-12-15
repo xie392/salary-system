@@ -1,0 +1,71 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+
+  .logo {
+    width: 100%;
+    min-height: 64px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logoImage {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      background: url('@/assets/logo.png') no-repeat;
+      background-size: cover;
+    }
+
+    .title {
+      font-size: 18px;
+      transition: 1s all;
+      white-space: nowrap;
+    }
+  }
+
+  .sider {
+    background: var(--bg-color, #fff);
+  }
+
+  .header {
+    background: var(--bg-color, #fff);
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .trigger {
+      font-size: 18px;
+    }
+
+    .info {
+      width: 200px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+  }
+
+
+  .content {
+    width: 100%;
+    height: calc(100% - 64px);
+    background: #f1f1f1;
+    padding: 15px;
+    box-sizing: border-box;
+
+    .container {
+      background: var(--bg-color, #fff);
+      height: 100%;
+      width: 100%;
+      border-radius: 3px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+}
