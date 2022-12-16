@@ -3,6 +3,10 @@ const router = express.Router();
 const middleware = require('../Middleware/index')
 const errorCode = require('../utils/error-code')
 
+router.get('/',(req,res)=>{
+  res.send("hello world")
+})
+
 // 全局响应 Response 
 router.use((req, res, next) => {
 
